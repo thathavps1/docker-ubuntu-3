@@ -12,4 +12,4 @@ RUN cd /tmp/bats && ./install.sh /usr/local
 ADD test /tmp/test
 RUN bats /tmp/test
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
