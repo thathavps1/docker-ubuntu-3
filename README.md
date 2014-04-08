@@ -9,7 +9,8 @@ Ubuntu base image with custom Aptible patches and Dockerfile building tools.
 
 ## Available Tags
 
-* `latest`: Ubuntu 12.10
+* `latest`: Ubuntu 12.04 (LTS)
+* `12.04`: Ubuntu 12.04 (LTS)
 * `12.10`: Ubuntu 12.10
 
 ## Included Tools/Patches

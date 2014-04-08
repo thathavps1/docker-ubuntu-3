@@ -1,4 +1,5 @@
 DOCKER = docker
+REPO = quay.io/aptible/ubuntu
 
 TAG = $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
 ifeq ($(TAG), master)
@@ -10,7 +11,7 @@ endif
 all: release
 
 release: test build
-	$(DOCKER) push quay.io/aptible/ubuntu
+	$(DOCKER) push $(REPO)
 
 build:
-	$(DOCKER) build -t quay.io/aptible/ubuntu:$(TAG) .
+	$(DOCKER) build -t $(REPO):$(TAG) .
