@@ -1,5 +1,7 @@
 # ![](https://gravatar.com/avatar/11d3bc4c3163e3d238d558d5c9d98efe?s=64) aptible/ubuntu
 
+[![Docker Repository on Quay.io](https://quay.io/repository/aptible/ubuntu/status)](https://quay.io/repository/aptible/ubuntu)
+
 Ubuntu base image with custom Aptible patches and Dockerfile building tools.
 
 ## Installation and Usage
