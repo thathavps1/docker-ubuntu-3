@@ -13,12 +13,12 @@ Ubuntu base image with custom Aptible patches and Dockerfile building tools.
 
 * `latest`: Ubuntu 12.04 (LTS)
 * `12.04`: Ubuntu 12.04 (LTS)
-* `12.10`: Ubuntu 12.10
 
 ## Included Tools/Patches
 
 * `bats`: The [Bats](https://github.com/sstephenson/bats) Bash Automated Testing System
 * `git`: Git Version Control System.
+* All Ubuntu LTS security updates (but not non-critical updates).
 
 ## Tests
 
