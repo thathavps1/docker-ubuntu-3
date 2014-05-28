@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:14.04
 MAINTAINER Frank Macreery <frank@macreery.com>
 
 RUN apt-get update
