@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:<%= ENV.fetch 'TAG' %>
 MAINTAINER Frank Macreery <frank@macreery.com>
 
 ADD files/usr/bin/apt-install /usr/bin/apt-install
@@ -20,5 +20,7 @@ RUN git clone https://github.com/sstephenson/bats.git /tmp/bats && \
     cd /tmp/bats && ./install.sh /usr/local
 
 # Integration tests
+ENV LIBC_MIN <%= ENV.fetch 'LIBC_MIN' %>
+ENV LIBSSL_MIN <%= ENV.fetch 'LIBSSL_MIN' %>
 ADD test /tmp/test
 RUN bats /tmp/test
