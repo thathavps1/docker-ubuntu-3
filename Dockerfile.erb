@@ -3,8 +3,8 @@ MAINTAINER Frank Macreery <frank@macreery.com>
 
 ADD files/usr/bin/apt-install /usr/bin/apt-install
 
-# Install Git
-RUN apt-install git
+# Install Git and tzdata. Those are usually needed in customer containers.
+RUN apt-install git tzdata
 
 # Install latest security updates now, and on build
 RUN grep security /etc/apt/sources.list > /tmp/security.list
