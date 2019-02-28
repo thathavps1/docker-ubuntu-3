@@ -21,7 +21,7 @@ ONBUILD RUN SECURITY_LIST=$(mktemp) \
  && rm "$SECURITY_LIST"
 
 # Install Git and tzdata. Those are usually needed in customer containers.
-RUN apt-install git tzdata
+RUN DEBIAN_FRONTEND=noninteractive apt-install git tzdata
 
 # Install Bats
 RUN git clone https://github.com/sstephenson/bats.git /tmp/bats && \
