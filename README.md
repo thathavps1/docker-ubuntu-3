@@ -12,6 +12,7 @@ Ubuntu base image with custom Aptible patches and Dockerfile building tools.
 
 ## Available Tags
 
+* `18.04`: Ubuntu 18.04 (LTS)
 * `16.04`: Ubuntu 16.04 (LTS)
 * `latest`: Ubuntu 14.04 (LTS)
 * `14.04`: Ubuntu 14.04 (LTS)
