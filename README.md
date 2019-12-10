@@ -5,6 +5,15 @@
 
 Ubuntu base image with custom Aptible patches and Dockerfile building tools.
 
+## Intended Use
+
+This image is used internally by Aptible. We do not recommend that customers
+use this repo, and instead recommend the Official Docker Ubuntu image:
+https://hub.docker.com/_/ubuntu
+
+Please see our [FAQ](https://www.aptible.com/documentation/deploy/tutorials/faq/aptible-base-images.html)
+for further information.
+
 ## Installation and Usage
 
     docker pull quay.io/aptible/ubuntu
